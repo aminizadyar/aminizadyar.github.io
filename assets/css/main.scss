@@ -1,0 +1,17 @@
+---
+---
+
+/* 1. Import your chosen skin (uses site.minimal_mistakes_skin or ‘default’) */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+
+/* 2. Import the rest of the theme’s styles */
+@import "minimal-mistakes";
+
+/* 3. Your overrides go _after_ the imports: */
+.avatar {
+  /* remove the circular mask */
+  border-radius: 0 !important;
+  /* make it larger (adjust as you like) */
+  width: 200px !important;
+  height: auto !important;
+}
