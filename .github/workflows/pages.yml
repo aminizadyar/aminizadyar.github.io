@@ -1,22 +1,16 @@
-name: Build and Deploy Pages
+name: Build & deploy Jekyll site
 
 on:
   push:
     branches:
       - main   # or 'master'
 
-# Give workflow permission to write Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repository
+      - name: Check out code
         uses: actions/checkout@v3
 
       - name: Set up Ruby
@@ -32,22 +26,10 @@ jobs:
       - name: Build site with Jekyll
         run: bundle exec jekyll build --destination _site
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v3
-
-      # **This is the key step**: use **upload-pages-artifact**, not upload-artifact.
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: _site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      contents: read
-
-    steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages       # The branch the action should deploy to.
+          folder: _site          # The folder the action should deploy.
+          clean: true            # Remove existing files on gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
