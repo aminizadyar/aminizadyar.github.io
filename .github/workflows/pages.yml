@@ -1,16 +1,15 @@
 name: Build and Deploy Pages
 
-# Trigger on pushes to main
 on:
   push:
     branches:
-      - main   # or 'master' if that's your default
+      - main   # or 'master'
 
-# Give the workflow permission to write the Pages branch
+# Give workflow permission to write Pages
 permissions:
-  contents: read    # for checkout
-  pages: write      # for deploy
-  id-token: write   # required by actions/configure-pages
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -36,7 +35,8 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload artifact for Pages
+      # **This is the key step**: use **upload-pages-artifact**, not upload-artifact.
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: _site
