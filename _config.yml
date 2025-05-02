@@ -9,15 +9,8 @@ plugins:
 
 remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 
-# Tell Jekyll to output files in _pages
-collections:
-  pages:
-    output: true
+author:
+  name:  "Amin Izadyar"
+  avatar: "/assets/images/avatar.jpg"
+  bio:   "Developer, tinkerer, and tea enthusiast."
 
-# Give everything in that collection the page layout by default
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: page
