@@ -28,12 +28,7 @@
     background: inherit !important;  /* preserve the theme’s background */
   }
 
-/* Keep skip-links usable but out of the layout */
+/* Remove the invisible skip-links bar so the masthead sits flush */
 .skip-links {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 1px;    /* keeps them off-screen until focused */
-  height: 1px;
-  overflow: hidden;
+  display: none !important;
 }
