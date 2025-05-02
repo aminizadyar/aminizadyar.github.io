@@ -1,16 +1,23 @@
-name: Build & deploy Jekyll site
+name: Build and Deploy Pages
 
+# Trigger on pushes to main
 on:
   push:
     branches:
-      - main   # or 'master' if that’s your default branch
+      - main   # or 'master' if that's your default
+
+# Give the workflow permission to write the Pages branch
+permissions:
+  contents: read    # for checkout
+  pages: write      # for deploy
+  id-token: write   # required by actions/configure-pages
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repo
+      - name: Check out repository
         uses: actions/checkout@v3
 
       - name: Set up Ruby
@@ -23,12 +30,24 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Build the site
+      - name: Build site with Jekyll
         run: bundle exec jekyll build --destination _site
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Configure Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      contents: read
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
