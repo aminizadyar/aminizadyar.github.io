@@ -19,12 +19,18 @@
 }
 
 /* -------------------------------------------------------------------
-   Sticky masthead
+   Force masthead above all content
    ------------------------------------------------------------------- */
    .masthead {
     position: sticky !important;
-    top: 0;
-    z-index: 1000;                /* keep it above all other content */
-    background: inherit !important;  /* preserve the theme’s background */
+    top: 0 !important;
+    z-index: 9999 !important;                 /* a very high stacking level */
+    background-color: var(--color-bg) !important; /* ensure it’s opaque */
   }
-
+  
+  /* Make sure the page content sits below */
+  .site-content {
+    position: relative !important;
+    z-index: 1 !important;
+  }
+  
