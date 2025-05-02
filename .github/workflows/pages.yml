@@ -5,6 +5,11 @@ on:
     branches:
       - main   # or 'master'
 
+# Grant the GITHUB_TOKEN rights to write repo contents (so it can push to gh-pages)
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -12,6 +17,8 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
+        # persist-credentials is true by default, so checkout will use GITHUB_TOKEN
+        # to push back to the same repo
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -29,7 +36,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages       # The branch the action should deploy to.
-          folder: _site          # The folder the action should deploy.
-          clean: true            # Remove existing files on gh-pages
+          branch: gh-pages       # deploy to gh-pages
+          folder: _site          # the folder to deploy
+          clean: true            # remove old files
           token: ${{ secrets.GITHUB_TOKEN }}
