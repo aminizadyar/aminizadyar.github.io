@@ -1,5 +1,5 @@
 ---                
-layout: page
+layout: single
 title:   "Contact"
 permalink: /contact/
 nav_order: 3
