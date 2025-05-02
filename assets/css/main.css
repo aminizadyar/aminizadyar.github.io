@@ -1,7 +1,5 @@
 @charset "UTF-8";
-/* 1. Import your chosen skin (uses site.minimal_mistakes_skin or ‘default’) */
 /* ========================================================================== Default skin ========================================================================== */
-/* 2. Import the rest of the theme’s styles */
 /* Copyright comment */
 /*!
  * Minimal Mistakes Jekyll Theme 4.27.1 by Michael Rose
@@ -1309,5 +1307,5 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .page__hero-caption a { color: #000 !important; }
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
-/* 3. Your overrides go _after_ the imports: */
-.avatar { /* remove the circular mask */ border-radius: 0 !important; /* make it larger (adjust as you like) */ width: 200px !important; height: auto !important; }
+/* Override the author‐profile avatar: make it rectangular and larger */
+.author__avatar img { border-radius: 0 !important; /* kill the circle mask */ max-width: 200px !important; /* your desired width */ width: auto !important; height: auto !important; }
