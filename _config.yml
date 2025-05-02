@@ -10,9 +10,9 @@ plugins:
 remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 
 author:
-  name:  ""
+  name:  " "
   avatar: "/assets/images/avatar.jpg"
-  bio:   ""
+  bio:   " "
 
 
 # Tell Jekyll to output files in _pages
