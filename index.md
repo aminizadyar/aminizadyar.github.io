@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Hi, I’m Amin!"
+title: "Personal Webite"
 author_profile: true
 permalink: /
 ---
