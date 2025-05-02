@@ -1,0 +1,9 @@
+title: "Your Name"
+description: "A short tagline or bio"
+url: "https://aminizadyar.github.io"
+baseurl: ""                 # leave blank for user sites
+
+# Tell GitHub to pull in Minimal Mistakes
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+plugins:
+  - jekyll-remote-theme
