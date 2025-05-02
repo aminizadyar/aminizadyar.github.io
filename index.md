@@ -1,5 +1,10 @@
 ---
 layout: home
-title: "Amin Izadyar"
+title: "Hi, I’m Amin!"
+description: "Developer, tinkerer, and tea enthusiast."
 ---
-testHello world—I’m using Minimal Mistakes on GitHub Pages!
+
+Hello 👋 I’m glad you’re here!  
+- 🔭 I work on open-source Jekyll themes.  
+- 🌱 I’m learning advanced GitHub Actions.  
+- 📫 You can reach me on [Twitter](https://twitter.com/aminizadyar).
