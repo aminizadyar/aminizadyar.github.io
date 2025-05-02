@@ -27,4 +27,13 @@
     z-index: 1000;                /* keep it above all other content */
     background: inherit !important;  /* preserve the theme’s background */
   }
-  
+
+/* Keep skip-links usable but out of the layout */
+.skip-links {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 1px;    /* keeps them off-screen until focused */
+  height: 1px;
+  overflow: hidden;
+}
