@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Research"
+title: Research
 permalink: /research/
 nav_order: 2
 ---
 
 ## My Research
 
-...
+Tell people about your work…

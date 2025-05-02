@@ -1,10 +1,11 @@
 ---
-layout:        single
-title:         ""
-description:   "PhD Student in Finance"
+layout: single
+title: "Hi, I’m Amin!"
 author_profile: true
-permalink:     /
+permalink: /
 ---
 
 Hello 👋 I’m glad you’re here!  
-- Placeholder
+- 🔭 I work on open-source Jekyll themes.  
+- 🌱 I’m learning advanced GitHub Actions.  
+- 📫 You can reach me on [Twitter](https://twitter.com/aminizadyar).
