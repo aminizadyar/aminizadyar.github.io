@@ -28,7 +28,32 @@
     background: inherit !important;  /* preserve the theme’s background */
   }
 
-/* Remove the invisible skip-links bar so the masthead sits flush */
-.skip-links {
-  display: none !important;
-}
+/* -------------------------------------------------------------------
+   Hide the invisible skip-links bar completely
+   ------------------------------------------------------------------- */
+   .skip-links {
+    display: none !important;
+  }
+  
+  /* -------------------------------------------------------------------
+     Fix the masthead to the top of the viewport
+     ------------------------------------------------------------------- */
+  .masthead {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: inherit !important;    /* keep your theme background */
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;  /* optional */
+  }
+  
+  /* -------------------------------------------------------------------
+     Push the page content down so it sits below the fixed masthead
+     ------------------------------------------------------------------- */
+  /* Adjust the 4rem to roughly the height of your masthead */
+  #main,
+  .site-content {
+    padding-top: 4rem !important;
+  }
+  
