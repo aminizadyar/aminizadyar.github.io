@@ -3,7 +3,7 @@ name: Build & deploy Jekyll site
 on:
   push:
     branches:
-      - main   # or 'master' if that's your default
+      - main   # or 'master' if that’s your default branch
 
 jobs:
   build-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: 3.1
 
       - name: Install dependencies
         run: |
