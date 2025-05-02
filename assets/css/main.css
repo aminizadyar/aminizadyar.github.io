@@ -1312,3 +1312,6 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 /* Tweak masthead logo */
 .site-logo img { max-width: 200px; /* adjust as needed */ width: auto; }
+
+/* ------------------------------------------------------------------- Sticky masthead ------------------------------------------------------------------- */
+.masthead { position: sticky !important; top: 0; z-index: 1000; /* keep it above all other content */ background: inherit !important; /* preserve the theme’s background */ }
