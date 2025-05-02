@@ -7,7 +7,7 @@
 /* Override the author‐profile avatar: make it rectangular and larger */
 .author__avatar img {
   border-radius: 0 !important;     /* kill the circle mask */
-  max-width: 400px !important;     /* your desired width */
+  max-width: 330px !important;     /* your desired width */
   width: auto !important;
   height: auto !important;
 }
