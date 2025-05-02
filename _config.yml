@@ -3,6 +3,15 @@ description: "PhD Finance"
 url: "https://aminizadyar.github.io"
 baseurl: ""
 
+# Point to your new logo (path relative to your site root)
+logo: "/assets/images/logo.png"
+
+# Optional: override the text shown in the masthead (or blank it out)
+# If you still want “Amin Izadyar” after the logo, you can change this.
+# If you want ONLY the logo (no text), set it to an empty string:
+masthead_title: ""
+
+
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
