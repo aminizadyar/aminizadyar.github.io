@@ -1313,8 +1313,8 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 /* Tweak masthead logo */
 .site-logo img { max-width: 200px; /* adjust as needed */ width: auto; }
 
-/* ------------------------------------------------------------------- Force masthead above all content ------------------------------------------------------------------- */
-.masthead { position: sticky !important; top: 0 !important; z-index: 9999 !important; /* a very high stacking level */ background-color: var(--color-bg) !important; /* ensure it’s opaque */ }
+/* ------------------------------------------------------------------- Sticky masthead with full-width background ------------------------------------------------------------------- */
+.masthead { position: sticky !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 9999 !important; /* Use your theme’s canvas color so it matches everywhere */ background-color: var(--color-canvas) !important; }
 
-/* Make sure the page content sits below */
-.site-content { position: relative !important; z-index: 1 !important; }
+/* Also ensure the inner wrap stays opaque if you ever remove the above */
+.masthead__inner-wrap { background-color: var(--color-canvas) !important; }
