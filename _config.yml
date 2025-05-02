@@ -8,3 +8,9 @@ plugins:
   - jekyll-include-cache
 
 remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+
+author:
+  name:  "Amin Izadyar"
+  avatar: "/assets/images/avatar.jpg"
+  bio:   "Developer, tinkerer, and tea enthusiast."
+
