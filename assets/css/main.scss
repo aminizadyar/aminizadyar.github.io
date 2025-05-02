@@ -21,15 +21,6 @@
 /* -------------------------------------------------------------------
    Sticky masthead
    ------------------------------------------------------------------- */
-   .masthead {
-    position: sticky !important;
-    top: 0;
-    z-index: 1000;                /* keep it above all other content */
-    background: inherit !important;  /* preserve the theme’s background */
-  }
-
-  ---
-  ---
   
   /* 1) Hide the invisible skip‐links bar so nothing sits above the masthead */
   .skip-links {
