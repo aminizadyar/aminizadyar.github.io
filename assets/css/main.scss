@@ -21,18 +21,16 @@
 /* -------------------------------------------------------------------
    Sticky masthead with full-width background
    ------------------------------------------------------------------- */
-.masthead {
-  position: sticky !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  z-index: 9999 !important;
-  /* Use your theme’s canvas color so it matches everywhere */
-  background-color: var(--color-canvas) !important;
-}
-
-/* Also ensure the inner wrap stays opaque if you ever remove the above */
-.masthead__inner-wrap {
-  background-color: var(--color-canvas) !important;
-}
+   .masthead,
+   .masthead__inner-wrap {
+     background-color: #fff !important;  /* or whatever hex you want */
+   }
+   
+   .masthead {
+     position: sticky !important;
+     top: 0 !important;
+     left: 0 !important;
+     right: 0 !important;
+     z-index: 9999 !important;           /* ensure it sits above all content */
+   }
 
