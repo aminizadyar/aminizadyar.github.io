@@ -17,3 +17,14 @@
   max-width: 200px;  /* adjust as needed */
   width: auto;
 }
+
+/* -------------------------------------------------------------------
+   Sticky masthead
+   ------------------------------------------------------------------- */
+   .masthead {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;                /* keep it above all other content */
+    background: inherit !important;  /* preserve the theme’s background */
+  }
+  
