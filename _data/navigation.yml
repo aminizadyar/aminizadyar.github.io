@@ -1,11 +1,7 @@
-- title: Home
-  url: /
-  nav_order: 1
-
-- title: Research
-  url: /research/
-  nav_order: 2
-
-- title: Contact
-  url: /contact/
-  nav_order: 3
+main:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Contact
+    url: /contact/
