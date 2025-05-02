@@ -12,5 +12,19 @@ remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 author:
   name:  "Amin Izadyar"
   avatar: "/assets/images/avatar.jpg"
-  bio:   "Developer, tinkerer, and tea enthusiast."
+  bio:   "Finance PhD | Imperial College London"
+
+
+# Tell Jekyll to output files in _pages
+collections:
+  pages:
+    output: true
+
+# Give everything in that collection the page layout by default
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
 
