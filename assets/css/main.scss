@@ -21,32 +21,10 @@
 /* -------------------------------------------------------------------
    Sticky masthead
    ------------------------------------------------------------------- */
-  
-  /* 1) Hide the invisible skip‐links bar so nothing sits above the masthead */
-  .skip-links {
-    display: none !important;
+   .masthead {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;                /* keep it above all other content */
+    background: inherit !important;  /* preserve the theme’s background */
   }
-  
-  /* 2) Reset any default body margin/padding (just in case) */
-  html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  /* 3) Fix the masthead at the very top of the viewport */
-  .masthead {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    z-index: 1000 !important;
-    background: inherit !important; /* keep your theme’s background color */
-    border-bottom: 1px solid rgba(0,0,0,0.1) !important; /* optional divider */
-  }
-  
-  /* 4) Push the page content down so it doesn’t sit underneath the fixed header */
-  /*    Adjust the value (4rem) to exactly match your masthead’s computed height */
-  .site-content {
-    padding-top: 4rem !important;
-  }
-  
+
