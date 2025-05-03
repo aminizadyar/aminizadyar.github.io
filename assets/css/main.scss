@@ -4,6 +4,7 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+
 /* Override the author‐profile avatar: make it rectangular and larger */
 .author__avatar img {
   border-radius: 0 !important;
@@ -71,7 +72,7 @@
 
 
 /* ===================================================================
-   MOBILE SIDEBAR AVATAR: force full‐width under .sidebar wrapper
+   MOBILE SCREEN SIDEBAR AVATAR: force full‐width under .sidebar wrapper
    =================================================================== */
    @media (max-width: 1000px) {
     /* 1) Make the sidebar container span the full viewport width */
@@ -100,6 +101,7 @@
   }
   
 
+/* smaller logo on mobile + move it slightly upwards for better aligment */
   @media (max-width: 768px) {
     .site-logo img {
       max-width: 120px !important;   /* smaller logo on mobile */
@@ -111,12 +113,20 @@
   
 
 /* —————————————————————————————————————————————————————————————
-   Widen the single‐layout inner wrapper so text doesn’t wrap early
+   Widen the single‐layout inner wrapper so text doesn’t wrap early. In other words: one-line sentence is not seperated into two lines when there is space.
    ————————————————————————————————————————————————————————————— */
 @media (min-width: 1000px) {
   .layout--single .page__inner-wrap {
-    width: 150% !important;
+    width: 150% !important; /* This is a workaround. Be careful. It might cause problems later. */
   }
   }
    
+
+/* —————————————————————————————————————————————————————————————
+   Hide the RSS “Feed” link in the footer
+   ————————————————————————————————————————————————————————————— */
+   footer .social-icons li:first-child {
+    display: none !important;
+  }
+  
   
