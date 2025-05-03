@@ -1328,15 +1328,15 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .layout--single .sidebar, .layout--single .sidebar:hover { opacity: 1 !important; /* full opacity always */ filter: none !important; /* remove any brightness filters */ transition: none !important; /* no fading on hover */ }
 
 /* ------------------------------------------------------------------- Increase sidebar width so the avatar never scrolls horizontally ------------------------------------------------------------------- */
-@media (min-width: 769px) { .layout--single .split-content__sidebar { width: 300px !important; max-width: 300px !important; flex: 0 0 300px !important; } }
+@media (min-width: 1000px) { .layout--single .split-content__sidebar { width: 300px !important; max-width: 300px !important; flex: 0 0 300px !important; } }
 /* Ensure the image scales to its container */
 .layout--single .author__avatar img { max-width: 100% !important; height: auto !important; }
 
-/* 1) Hide that “Follow” button wrapper completely */
+/*  Hide the “Follow” button wrapper completely */
 .author__urls-wrapper { display: none !important; }
 
 /* =================================================================== MOBILE SIDEBAR AVATAR: force full‐width under .sidebar wrapper =================================================================== */
-@media (max-width: 768px) { /* 1) Make the sidebar container span the full viewport width */
+@media (max-width: 1000px) { /* 1) Make the sidebar container span the full viewport width */
   .sidebar.sticky { width: 100% !important; max-width: 100% !important; }
   /* 2) Ensure the avatar wrapper itself is full‐width */
   .sidebar.sticky .author__avatar { width: 100% !important; max-width: 100% !important; }
