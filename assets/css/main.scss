@@ -37,11 +37,12 @@
 
 
 /* -------------------------------------------------------------------
-   Kill the sidebar dimming on single‐layout pages
+   Disable the dim-and-bright hover effect on the sidebar
    ------------------------------------------------------------------- */
-   .layout--single .split-content__sidebar,
-   .layout--single .split-content__sidebar:not(:hover) {
-     opacity: 1 !important;     /* cancel the 0.5 opacity */
-     filter: none !important;   /* remove any blur/brightness filter */
-     transition: none !important;  /* remove fade on hover */
-   }   
+   .layout--single .sidebar,
+   .layout--single .sidebar:hover {
+     opacity: 1 !important;       /* full opacity always */
+     filter: none !important;     /* remove any brightness filters */
+     transition: none !important; /* no fading on hover */
+   }
+      
