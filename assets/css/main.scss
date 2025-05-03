@@ -109,3 +109,10 @@
     }
   }
   
+
+  /* —————————————————————————————————————————————————————————————
+   Let single‐layout content fill the full width (no 65ch cap)
+   ————————————————————————————————————————————————————————————— */
+.layout--single .split-content__content {
+  max-width: 100% !important;
+}
