@@ -6,8 +6,8 @@ permalink: /
 ---
 
 Hello 👋 I’m glad you’re here!  
-- 🌱 I am a PhD student in Finance at Imperial College London.  
-- 🔭 My research interests are international finance and asset pricing.  
+- 🎓 I am a PhD student in Finance at Imperial College London.  
+- 📈 My research interests are international finance and asset pricing.
 - ✉️ **Email:** [a.izadyar23@imperial.ac.uk](mailto:a.izadyar23@imperial.ac.uk)
 - 🔗 
   <a href="https://www.linkedin.com/in/amin-izadyar/" target="_blank" rel="noopener">

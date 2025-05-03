@@ -113,7 +113,6 @@
 /* —————————————————————————————————————————————————————————————
    Widen the single‐layout inner wrapper so text doesn’t wrap early
    ————————————————————————————————————————————————————————————— */
-
 @media (min-width: 1000px) {
   .layout--single .page__inner-wrap {
     width: 150% !important;
