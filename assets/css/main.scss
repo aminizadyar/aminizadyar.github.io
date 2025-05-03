@@ -105,6 +105,7 @@
       max-width: 120px !important;   /* smaller logo on mobile */
       width: auto !important;
       margin-left: 0.25rem !important;  /* keep your existing nudge */
+      transform: translateY(-0.25rem) !important; /* shift up by 0.25rem */
     }
   }
   
