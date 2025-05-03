@@ -1318,5 +1318,5 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .masthead { position: sticky !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 9999 !important; /* ensure it sits above all content */ }
 
-/* ------------------------------------------------------------------- Kill the sidebar dimming on single‐layout pages ------------------------------------------------------------------- */
-.layout--single .split-content__sidebar, .layout--single .split-content__sidebar:not(:hover) { opacity: 1 !important; /* cancel the 0.5 opacity */ filter: none !important; /* remove any blur/brightness filter */ transition: none !important; /* remove fade on hover */ }
+/* ------------------------------------------------------------------- Disable the dim-and-bright hover effect on the sidebar ------------------------------------------------------------------- */
+.layout--single .sidebar, .layout--single .sidebar:hover { opacity: 1 !important; /* full opacity always */ filter: none !important; /* remove any brightness filters */ transition: none !important; /* no fading on hover */ }
