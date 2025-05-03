@@ -1335,10 +1335,10 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 /*  Hide the “Follow” button wrapper completely */
 .author__urls-wrapper { display: none !important; }
 
-/* =================================================================== MOBILE avatar: full-width until height hits 200 px, then height=200 =================================================================== */
-@media (max-width: 1000px) { /* sidebar container full-width */
+/* =================================================================== MOBILE SIDEBAR AVATAR: force full‐width under .sidebar wrapper =================================================================== */
+@media (max-width: 1000px) { /* 1) Make the sidebar container span the full viewport width */
   .sidebar.sticky { width: 100% !important; max-width: 100% !important; }
-  /* kill any old desktop-only width setting */
-  .layout--single .split-content__sidebar { flex: none !important; width: auto !important; max-width: none !important; }
-  /*  Step 1: let the image fill up to the container width, Step 2: but never let its height drop below 200px;  once that threshold is reached it will switch to a fixed height of 200px, keeping its aspect ratio. */
-  .sidebar.sticky .author__avatar img { /* ideal: fill the container width */ width: 100% !important; max-width: 100% !important; height: auto !important; /* once width scaling would make height <200px, cap it */ max-height: none !important; /* clear any old cap */ min-height: 200px !important; /* force at least 200px tall */ object-fit: contain !important; /* maintain aspect ratio */ } }
+  /* 2) Ensure the avatar wrapper itself is full‐width */
+  .sidebar.sticky .author__avatar { width: 100% !important; max-width: 700px !important; }
+  /* 3) Stretch the image to fill its wrapper */
+  .sidebar.sticky .author__avatar img { display: block !important; width: 100% !important; max-width: 700px !important; height: auto !important; } }
