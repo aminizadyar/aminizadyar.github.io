@@ -6,12 +6,21 @@
 
 /* Override the author‐profile avatar: make it rectangular and larger */
 .author__avatar img {
-  border-radius: 0 !important;     /* kill the circle mask */
-  max-width: 200px !important;     /* your desired width */
+  /* remove the circular mask */
+  border-radius: 0 !important;
+  /* bump up the size */
+  max-width: 200px !important;
   width: auto !important;
   height: auto !important;
+  /* remove any border */
   border: none !important;
+
+  /* keep the “hover” brightness always on */
+  filter: brightness(1.1) !important;
+  /* don’t animate between states */
+  transition: none !important;
 }
+
 
 /* Tweak masthead logo */
 .site-logo img {
