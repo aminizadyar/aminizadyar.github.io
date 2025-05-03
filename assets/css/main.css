@@ -1326,3 +1326,9 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 /* Ensure the image scales to its container */
 .layout--single .author__avatar img { max-width: 100% !important; height: auto !important; }
+
+/* ------------------------------------------------------------------- Make sidebar & avatar full-width on mobile ------------------------------------------------------------------- */
+@media (max-width: 768px) { /* Sidebar moves above content on mobile; make it 100% wide */
+  .layout--single .split-content__sidebar { width: 100% !important; max-width: 100% !important; flex: 0 0 auto !important; /* allow height to auto-size */ }
+  /* Avatar image fills its container */
+  .layout--single .author__avatar img { max-width: 100% !important; width: 100% !important; height: auto !important; } }
