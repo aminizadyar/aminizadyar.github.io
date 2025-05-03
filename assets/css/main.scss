@@ -53,7 +53,7 @@
 /* -------------------------------------------------------------------
    Increase sidebar width so the avatar never scrolls horizontally
    ------------------------------------------------------------------- */
-   @media (min-width: 769px) {
+   @media (min-width: 1000px) {
     .layout--single .split-content__sidebar {
       width: 300px !important;
       max-width: 300px !important;
@@ -66,8 +66,10 @@
     max-width: 100% !important;
     height: auto !important;
   }
+
   
-/* 1) Hide that “Follow” button wrapper completely */
+  
+/*  Hide the “Follow” button wrapper completely */
   .author__urls-wrapper {
     display: none !important;
   }
@@ -76,7 +78,7 @@
 /* ===================================================================
    MOBILE SIDEBAR AVATAR: force full‐width under .sidebar wrapper
    =================================================================== */
-   @media (max-width: 768px) {
+   @media (max-width: 1000px) {
     /* 1) Make the sidebar container span the full viewport width */
     .sidebar.sticky {
       width: 100% !important;
