@@ -87,7 +87,8 @@
   
     /* 2) Ensure the avatar wrapper itself is full‐width */
     .sidebar.sticky .author__avatar {
-      
+      display: flex !important; 
+      justify-content: center !important;
       width: 100% !important;
       max-width: 400px !important;
     }
