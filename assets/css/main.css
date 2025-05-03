@@ -1339,6 +1339,6 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 @media (max-width: 1000px) { /* 1) Make the sidebar container span the full viewport width */
   .sidebar.sticky { width: 100% !important; max-width: 100% !important; }
   /* 2) Ensure the avatar wrapper itself is full‐width */
-  .sidebar.sticky .author__avatar { display: flex !important; justify-content: center !important; width: 100% !important; max-width: 400px !important; }
+  .sidebar.sticky .author__avatar { width: 100% !important; max-width: 400px !important; }
   /* 3) Stretch the image to fill its wrapper */
-  .sidebar.sticky .author__avatar img { display: flex !important; justify-content: center !important; display: block !important; width: 100% !important; max-width: 400px !important; height: auto !important; } }
+  .sidebar.sticky .author__avatar img { display: block !important; width: 100% !important; max-width: 400px !important; height: auto !important; } }
