@@ -1341,4 +1341,4 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   /* 2) Ensure the avatar wrapper itself is full‐width */
   .sidebar.sticky .author__avatar { width: 100% !important; max-width: 400px !important; }
   /* 3) Stretch the image to fill its wrapper */
-  .sidebar.sticky .author__avatar img { display: block !important; margin: 0 auto !important; /* center horizontally */ transform: translateX(2rem) !important; /* push 0.25rem to the right */ width: 100% !important; max-width: 400px !important; height: auto !important; } }
+  .sidebar.sticky .author__avatar img { display: block !important; margin: 0 auto !important; /* center horizontally */ transform: translateX(1rem) !important; /* push 0.25rem to the right */ width: 100% !important; max-width: 400px !important; height: auto !important; } }
