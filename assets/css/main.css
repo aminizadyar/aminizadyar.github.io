@@ -1338,4 +1338,4 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .sidebar.sticky .author__avatar img { display: block !important; margin: 0 auto !important; /* center horizontally */ transform: translateX(1.15rem) !important; /* push 0.25rem to the right */ width: 100% !important; max-width: 400px !important; height: auto !important; } }
 @media (max-width: 768px) { .site-logo img { max-width: 120px !important; /* smaller logo on mobile */ width: auto !important; margin-left: 0.25rem !important; /* keep your existing nudge */ transform: translateY(-0.1rem) !important; /* shift up by 0.25rem */ } }
 /* ————————————————————————————————————————————————————————————— Widen the single‐layout inner wrapper so text doesn’t wrap early ————————————————————————————————————————————————————————————— */
-.layout--single .page__inner-wrap { width: 150% !important; }
+@media (min-width: 1000px) { .layout--single .page__inner-wrap { width: 150% !important; } }
