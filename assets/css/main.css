@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ========================================================================== Default skin ========================================================================== */
 /* Copyright comment */
 /*!
@@ -1307,8 +1306,10 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .page__hero-caption a { color: #000 !important; }
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
-/* Override the author‐profile avatar: make it rectangular and larger */
-.author__avatar img { /* remove the circular mask */ border-radius: 0 !important; /* bump up the size */ max-width: 200px !important; width: auto !important; height: auto !important; /* remove any border */ border: none !important; /* keep the “hover” brightness always on */ filter: brightness(1.1) !important; /* don’t animate between states */ transition: none !important; }
+.author__avatar img, .avatar { /* reset any filters and remove transitions */ filter: none !important; transition: none !important; /* keep your other sizing/border rules */ border-radius: 0 !important; max-width: 200px !important; width: auto !important; height: auto !important; border: none !important; }
+
+/* specifically override the hover state too */
+.author__avatar img:hover, .avatar:hover { filter: none !important; }
 
 /* Tweak masthead logo */
 .site-logo img { max-width: 200px; /* adjust as needed */ width: auto; }
