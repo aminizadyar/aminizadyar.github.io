@@ -9,21 +9,13 @@
   border-radius: 0 !important;
   border: none !important;  }   
 
-@media (max-width: 769px) {/* Tweak masthead logo */
-  .site-logo img {
-    max-width: 170px;  /* adjust as needed */
-    width: auto;
-    margin-left: 0.25rem !important;
-  }}
 
-@media (min-width: 769px) {/* Tweak masthead logo */
-    .site-logo img {
-      max-width: 120px;  /* adjust as needed */
-      width: auto;
-      margin-left: 0.25rem !important;
-    }}
-
-
+/* Tweak masthead logo */
+.site-logo img {
+  max-width: 170px;  /* adjust as needed */
+  width: auto;
+  margin-left: 0.25rem !important;
+}
 
 /* -------------------------------------------------------------------
    Sticky masthead with full-width background
@@ -105,5 +97,14 @@
       height: auto !important;
     }
    
+  }
+  
+
+  @media (max-width: 768px) {
+    .site-logo img {
+      max-width: 80px !important;   /* smaller logo on mobile */
+      width: auto !important;
+      margin-left: 0.25rem !important;  /* keep your existing nudge */
+    }
   }
   
