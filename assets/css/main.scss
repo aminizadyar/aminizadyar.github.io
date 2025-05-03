@@ -95,11 +95,12 @@
     /* 3) Stretch the image to fill its wrapper */
     .sidebar.sticky .author__avatar img {
       display: block !important;
-      margin-left: 0.25rem !important;
-      margin-right: auto !important;  /* push the image to the right */
+      margin: 0 auto !important;       /* center horizontally */
+      transform: translateX(0.25rem) !important;  /* push 0.25rem to the right */
       width: 100% !important;
       max-width: 400px !important;
       height: auto !important;
     }
+   
   }
   
