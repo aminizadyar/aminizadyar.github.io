@@ -6,11 +6,11 @@
 
 /* Override the author‐profile avatar: make it rectangular and larger */
 .author__avatar img {
-  border-radius: 0 !important;     /* kill the circle mask */
-  max-width: 200px !important;     /* your desired width */
-  width: auto !important;
-  height: auto !important;
-  border: none !important;
+  border-radius: 0 !important;  }   /* kill the circle mask */
+  /*max-width: 200px !important;  /*   /* your desired width */
+  /*width: auto !important;/*
+  /*height: auto !important;/*
+  /*border: none !important;/*
 }
 
 /* Tweak masthead logo */
@@ -72,22 +72,32 @@
 
 
 /* ===================================================================
-   MOBILE-SPECIFIC SIDEBAR FIXES
+   MOBILE: force full-width sidebar & content
    =================================================================== */
-
    @media (max-width: 768px) {
-
-    /* 1) Make the sidebar container full-width */
+    /* Turn the split-content flex into a single column */
+    .layout--single .split-content {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+    /* Sidebar full-width */
     .layout--single .split-content__sidebar {
+      flex: 0 0 auto !important;
       width: 100% !important;
       max-width: 100% !important;
-      flex: none !important;    /* let it size itself instead of flexing */
     }
-  
-    /* 2) Stretch the avatar image to fill that container */
+    /* Main content full-width */
+    .layout--single .split-content__content {
+      flex: 0 0 auto !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    /* Avatar full-width inside sidebar */
     .layout--single .author__avatar img {
       width: 100% !important;
       max-width: 100% !important;
       height: auto !important;
     }
   }
+  
