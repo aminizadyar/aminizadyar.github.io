@@ -5,26 +5,30 @@
 @import "minimal-mistakes";
 
 /* Override the author‐profile avatar: make it rectangular and larger */
-.author__avatar img,
-.avatar {
-  /* sizing & shape */
-  border-radius: 0 !important;
-  max-width: 200px !important;
+.author__avatar img {
+  border-radius: 0 !important;     /* kill the circle mask */
+  max-width: 200px !important;     /* your desired width */
   width: auto !important;
   height: auto !important;
   border: none !important;
-
-  /* reset brightness filter and disable any transition */
-  filter: brightness(1) !important;
+  filter: none !important;
   transition: none !important;
 }
 
-/* also ensure the hover state stays the same */
-.author__avatar img:hover,
-.avatar:hover {
-  filter: brightness(1) !important;
+/* -------------------------------------------------------------------
+   Remove any brightness filter on the author sidebar container
+   ------------------------------------------------------------------- */
+/* The `.split-content__sidebar` class wraps your author box */
+.split-content__sidebar,
+.split-content__sidebar:hover {
+  filter: none !important;
 }
 
+/* And just in case, also clear on the generic sidebar class */
+.sidebar,
+.sidebar:hover {
+  filter: none !important;
+}
 
 /* Tweak masthead logo */
 .site-logo img {
