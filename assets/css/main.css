@@ -1308,15 +1308,14 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
 /* Override the author‐profile avatar: make it rectangular and larger */
-.author__avatar img { border-radius: 0 !important; }
+.author__avatar img { border-radius: 0 !important; border: none !important; }
 
 /* kill the circle mask */
 /*max-width: 200px !important;  /*   /* your desired width */
-  /*width: auto !important;/* /*height: auto !important;/* /*border: none !important;/*
-}
-
-/* Tweak masthead logo */
-.site-logo img { max-width: 170px; /* adjust as needed */ width: auto; margin-left: 0.25rem !important; }
+/*width: auto !important;/*
+/*height: auto !important;/*
+/*/
+* .site-logo img { max-width: 170px; /* adjust as needed */ width: auto; margin-left: 0.25rem !important; }
 
 /* ------------------------------------------------------------------- Sticky masthead with full-width background ------------------------------------------------------------------- */
 .masthead, .masthead__inner-wrap { background-color: #fff !important; /* or whatever hex you want */ }
