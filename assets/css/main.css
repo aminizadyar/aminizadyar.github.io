@@ -1335,6 +1335,10 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 /* 1) Hide that “Follow” button wrapper completely */
 .author__urls-wrapper { display: none !important; }
 
-/* =================================================================== MOBILE: force full-width sidebar & content =================================================================== */
-@media (max-width: 768px) { .layout--single .split-content__sidebar { width: 100% !important; max-width: 100% !important; flex: none !important; }
-  .layout--single .author__avatar img { width: 100% !important; max-width: 100% !important; height: auto !important; } }
+/* =================================================================== MOBILE SIDEBAR AVATAR: force full‐width under .sidebar wrapper =================================================================== */
+@media (max-width: 768px) { /* 1) Make the sidebar container span the full viewport width */
+  .sidebar.sticky { width: 100% !important; max-width: 100% !important; }
+  /* 2) Ensure the avatar wrapper itself is full‐width */
+  .sidebar.sticky .author__avatar { width: 100% !important; max-width: 100% !important; }
+  /* 3) Stretch the image to fill its wrapper */
+  .sidebar.sticky .author__avatar img { display: block !important; width: 100% !important; max-width: 100% !important; height: auto !important; } }
