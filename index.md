@@ -9,7 +9,7 @@ Hello 👋 I’m glad you’re here!
 - 🌱 I am a PhD student in Finance at Imperial College London.  
 - 🔭 My research interests are international finance and asset pricing.  
 - ✉️ **Email:** [a.izadyar23@imperial.ac.uk](mailto:a.izadyar23@imperial.ac.uk)
-- 🔗 **Connect with me:**
+- 🔗 
   <a href="https://www.linkedin.com/in/amin-izadyar/" target="_blank" rel="noopener">
     <img src="/assets/images/linkedin.png" alt="LinkedIn" width="24" style="vertical-align:middle" /> LinkedIn
   </a>
