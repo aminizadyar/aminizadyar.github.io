@@ -1337,5 +1337,5 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   /* 3) Stretch the image to fill its wrapper */
   .sidebar.sticky .author__avatar img { display: block !important; margin: 0 auto !important; /* center horizontally */ transform: translateX(1.15rem) !important; /* push 0.25rem to the right */ width: 100% !important; max-width: 400px !important; height: auto !important; } }
 @media (max-width: 768px) { .site-logo img { max-width: 120px !important; /* smaller logo on mobile */ width: auto !important; margin-left: 0.25rem !important; /* keep your existing nudge */ transform: translateY(-0.1rem) !important; /* shift up by 0.25rem */ } }
-/* ————————————————————————————————————————————————————————————— Let single‐layout content fill the full width (no 65ch cap) ————————————————————————————————————————————————————————————— */
-.layout--single .split-content__content { max-width: 100% !important; }
+/* ————————————————————————————————————————————————————————————— Let single‐layout content fill the full width so list items don’t wrap early ————————————————————————————————————————————————————————————— */
+.layout--single .split-content__content, .layout--single .page__content { max-width: 100% !important; width: 100% !important; }
