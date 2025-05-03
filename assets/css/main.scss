@@ -35,12 +35,13 @@
      z-index: 9999 !important;           /* ensure it sits above all content */
    }
 
+
 /* -------------------------------------------------------------------
-   Disable all filters and opacity changes in the author sidebar
+   Kill the sidebar dimming on single‐layout pages
    ------------------------------------------------------------------- */
-   .split-content__sidebar,
-   .split-content__sidebar * {
-     filter: none !important;
-     opacity: 1 !important;
-     transition: none !important;
-   }
+   .layout--single .split-content__sidebar,
+   .layout--single .split-content__sidebar:not(:hover) {
+     opacity: 1 !important;     /* cancel the 0.5 opacity */
+     filter: none !important;   /* remove any blur/brightness filter */
+     transition: none !important;  /* remove fade on hover */
+   }   
