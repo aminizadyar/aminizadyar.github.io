@@ -4,26 +4,26 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+/* Override the author‐profile avatar: make it rectangular and larger */
 .author__avatar img,
 .avatar {
-  /* reset any filters and remove transitions */
-  filter: none !important;
-  transition: none !important;
-
-  /* keep your other sizing/border rules */
+  /* sizing & shape */
   border-radius: 0 !important;
   max-width: 200px !important;
   width: auto !important;
   height: auto !important;
   border: none !important;
+
+  /* reset brightness filter and disable any transition */
+  filter: brightness(1) !important;
+  transition: none !important;
 }
 
-/* specifically override the hover state too */
+/* also ensure the hover state stays the same */
 .author__avatar img:hover,
 .avatar:hover {
-  filter: none !important;
+  filter: brightness(1) !important;
 }
-
 
 
 /* Tweak masthead logo */
