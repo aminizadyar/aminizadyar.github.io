@@ -1308,14 +1308,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
 /* Override the author‐profile avatar: make it rectangular and larger */
-.author__avatar img { border-radius: 0 !important; /* kill the circle mask */ max-width: 200px !important; /* your desired width */ width: auto !important; height: auto !important; border: none !important; filter: none !important; transition: none !important; }
-
-/* ------------------------------------------------------------------- Remove any brightness filter on the author sidebar container ------------------------------------------------------------------- */
-/* The `.split-content__sidebar` class wraps your author box */
-.split-content__sidebar, .split-content__sidebar:hover { filter: none !important; }
-
-/* And just in case, also clear on the generic sidebar class */
-.sidebar, .sidebar:hover { filter: none !important; }
+.author__avatar img { border-radius: 0 !important; /* kill the circle mask */ max-width: 200px !important; /* your desired width */ width: auto !important; height: auto !important; border: none !important; }
 
 /* Tweak masthead logo */
 .site-logo img { max-width: 200px; /* adjust as needed */ width: auto; }
@@ -1324,3 +1317,6 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .masthead, .masthead__inner-wrap { background-color: #fff !important; /* or whatever hex you want */ }
 
 .masthead { position: sticky !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 9999 !important; /* ensure it sits above all content */ }
+
+/* ------------------------------------------------------------------- Disable all filters and opacity changes in the author sidebar ------------------------------------------------------------------- */
+.split-content__sidebar, .split-content__sidebar * { filter: none !important; opacity: 1 !important; transition: none !important; }
