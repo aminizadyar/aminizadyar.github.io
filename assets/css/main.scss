@@ -7,20 +7,23 @@
 /* Override the author‐profile avatar: make it rectangular and larger */
 .author__avatar img {
   border-radius: 0 !important;
-  border: none !important;  }   /* kill the circle mask */
-  
-  /*max-width: 200px !important;  /*   /* your desired width */
-  /*width: auto !important;/*
-  /*height: auto !important;/*
+  border: none !important;  }   
+
+@media (max-width: 769px) {/* Tweak masthead logo */
+  .site-logo img {
+    max-width: 170px;  /* adjust as needed */
+    width: auto;
+    margin-left: 0.25rem !important;
+  }}
+
+@media (min-width: 769px) {/* Tweak masthead logo */
+    .site-logo img {
+      max-width: 120px;  /* adjust as needed */
+      width: auto;
+      margin-left: 0.25rem !important;
+    }}
 
 
-
-/* Tweak masthead logo */
-.site-logo img {
-  max-width: 170px;  /* adjust as needed */
-  width: auto;
-  margin-left: 0.25rem !important;
-}
 
 /* -------------------------------------------------------------------
    Sticky masthead with full-width background
