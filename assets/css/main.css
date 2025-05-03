@@ -1320,3 +1320,9 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 /* ------------------------------------------------------------------- Disable the dim-and-bright hover effect on the sidebar ------------------------------------------------------------------- */
 .layout--single .sidebar, .layout--single .sidebar:hover { opacity: 1 !important; /* full opacity always */ filter: none !important; /* remove any brightness filters */ transition: none !important; /* no fading on hover */ }
+
+/* ------------------------------------------------------------------- Increase sidebar width so the avatar never scrolls horizontally ------------------------------------------------------------------- */
+.layout--single .split-content__sidebar { /* set your desired sidebar width */ width: 300px !important; max-width: 300px !important; /* allow the main content to fill the rest */ flex: 0 0 300px !important; }
+
+/* Ensure the image scales to its container */
+.layout--single .author__avatar img { max-width: 100% !important; height: auto !important; }
