@@ -1312,10 +1312,12 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 /* kill the circle mask */
 /*max-width: 200px !important;  /*   /* your desired width */
-/*width: auto !important;/*
-/*height: auto !important;/*
-/*/
-* .site-logo img { max-width: 170px; /* adjust as needed */ width: auto; margin-left: 0.25rem !important; }
+  /*width: auto !important;/* /*height: auto !important;/*
+
+
+
+/* Tweak masthead logo */
+.site-logo img { max-width: 170px; /* adjust as needed */ width: auto; margin-left: 0.25rem !important; }
 
 /* ------------------------------------------------------------------- Sticky masthead with full-width background ------------------------------------------------------------------- */
 .masthead, .masthead__inner-wrap { background-color: #fff !important; /* or whatever hex you want */ }
@@ -1326,8 +1328,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .layout--single .sidebar, .layout--single .sidebar:hover { opacity: 1 !important; /* full opacity always */ filter: none !important; /* remove any brightness filters */ transition: none !important; /* no fading on hover */ }
 
 /* ------------------------------------------------------------------- Increase sidebar width so the avatar never scrolls horizontally ------------------------------------------------------------------- */
-.layout--single .split-content__sidebar { /* set your desired sidebar width */ width: 300px !important; max-width: 300px !important; /* allow the main content to fill the rest */ flex: 0 0 300px !important; }
-
+@media (min-width: 769px) { .layout--single .split-content__sidebar { width: 300px !important; max-width: 300px !important; flex: 0 0 300px !important; } }
 /* Ensure the image scales to its container */
 .layout--single .author__avatar img { max-width: 100% !important; height: auto !important; }
 
@@ -1335,11 +1336,5 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .author__urls-wrapper { display: none !important; }
 
 /* =================================================================== MOBILE: force full-width sidebar & content =================================================================== */
-@media (max-width: 768px) { /* Turn the split-content flex into a single column */
-  .layout--single .split-content { display: flex !important; flex-direction: column !important; align-items: stretch !important; }
-  /* Sidebar full-width */
-  .layout--single .split-content__sidebar { flex: 0 0 auto !important; width: 100% !important; max-width: 100% !important; }
-  /* Main content full-width */
-  .layout--single .split-content__content { flex: 0 0 auto !important; width: 100% !important; max-width: 100% !important; }
-  /* Avatar full-width inside sidebar */
+@media (max-width: 768px) { .layout--single .split-content__sidebar { width: 100% !important; max-width: 100% !important; flex: none !important; }
   .layout--single .author__avatar img { width: 100% !important; max-width: 100% !important; height: auto !important; } }
