@@ -87,16 +87,18 @@
   
     /* 2) Ensure the avatar wrapper itself is full‐width */
     .sidebar.sticky .author__avatar {
-      height: 300px !important;
+      width: 100% !important;
       max-width: 100% !important;
+      max-height: 300px;
     }
   
     /* 3) Stretch the image to fill its wrapper */
     .sidebar.sticky .author__avatar img {
       display: block !important;
-      height: 300px !important;
+      width: 100% !important;
       max-width: 100% !important;
-
+      max-height: 300px;
+      height: auto !important;
     }
   }
   
