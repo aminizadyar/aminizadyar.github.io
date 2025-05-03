@@ -111,11 +111,9 @@
   
 
 /* —————————————————————————————————————————————————————————————
-   Let single‐layout content fill the full width so list items don’t wrap early
+   Widen the single‐layout inner wrapper so text doesn’t wrap early
    ————————————————————————————————————————————————————————————— */
-   .layout--single .split-content__content,
-   .layout--single .page__content {
-     max-width: 100% !important;
-     width: 100% !important;
-   }
-   
+   .layout--single .page__inner-wrap {
+    width: 150% !important;
+  }
+  
