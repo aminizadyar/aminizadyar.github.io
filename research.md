@@ -6,9 +6,10 @@ nav_order: 2
 ---
 
 <div style="margin-left:2em;">
-  <h2>My Research</h2>
+  <h2>Papers</h2>
   <ul>
-    <li>Tell people about your work…</li>
+    <li>Generative AI and Fundamentals-Based Exchange Rate Forecasting <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5228767" target="_blank" rel="noopener">
+     [SSRN]</a></li>
     <li>Tell people about your work…</li>
     <!-- etc. -->
   </ul>
