@@ -1342,3 +1342,6 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 @media (min-width: 1000px) { .layout--single .page__inner-wrap { width: 150% !important; /* This is a workaround. Be careful. It might cause problems later. */ } }
 /* ————————————————————————————————————————————————————————————— Hide the RSS “Feed” link in the footer ————————————————————————————————————————————————————————————— */
 footer .social-icons li:first-child { display: none !important; }
+
+/* ------------------------------------------------------------------- Smaller, muted text for paper abstracts ------------------------------------------------------------------- */
+.paper-abstract { font-size: 0.9em !important; /* 90% of the normal text size */ line-height: 1.4 !important; /* a bit more breathing room */ color: #555 !important; /* slightly muted color */ margin-top: 0.25em !important; /* small gap above */ margin-left: 1.5em !important; /* indent under the bullet */ }
