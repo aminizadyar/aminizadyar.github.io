@@ -33,13 +33,11 @@ nav_order: 2
   </ul>
 </div>
 
-
-
 <div style="margin-left:2em;">
-  <h2>Pre-PhD:</h2>
+  <h2>Pre-PhD</h2>
   <ul>
     <li>
-  Investor Base and Volatility of Cryptocurrencies
+  Investor Base and Volatility of Cryptocurrencies (2022), with Shiva Zamani
   <a href="https://arxiv.org/abs/2211.13274" target="_blank" rel="noopener">[Arxiv]</a>
     </li>
   </ul>
