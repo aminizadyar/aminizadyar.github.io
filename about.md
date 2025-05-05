@@ -19,15 +19,8 @@ nav_order: 3
 </div>
 
 <div style="margin-left:2em;">
-  <h5>Beyond the Resume</h5>
+  <h2>Beyond the Resume</h2>
   <div class="paper-abstract">
-  <ul>
-    <li> I love watching football and I’m a Chelsea FC fan.
-     </li>
-    <li> My favourie books: - Brave New World - Homo Deus: A History of Tomorrow - Fooled by Randomness  
-     </li>
-    <li> My favourie movies: - Cinema Paradiso - Fight Club - Harvey  
-     </li>
-  </ul>
-  </div>
+  I love watching football and I’m a Chelsea FC fan. Some of my favourite books include <em>Brave New World</em>, <em>Homo Deus: A History of Tomorrow</em>, and <em>Fooled by Randomness</em>. I also enjoy classic and thought-provoking films such as <em>Cinema Paradiso</em>, <em>Fight Club</em>, and <em>Harvey</em>.
+</div>
 </div>
