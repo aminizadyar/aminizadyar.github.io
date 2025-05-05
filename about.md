@@ -4,7 +4,6 @@ title:   "About Me"
 permalink: /about/
 nav_order: 3
 ---
-
 <div style="margin-left:2em;">
   <h2>Bio</h2>
     <div class="paper-abstract">
@@ -12,6 +11,11 @@ nav_order: 3
     His recent work explores topics such as currency return predictability using AI, cross-asset signals in global portfolios, and the role of monetary policy in exchange rate determination. Amin's academic research is grounded in a strong quantitative background, as evidenced by a perfect GRE score (340/340) and outstanding performance in national university entrance exams, where he ranked 2nd out of 20,000 for his master's and 9th out of 150,000 for his bachelor's. <div style="margin-top: 0.6em;"></div>
     In addition to his research, Amin has practical experience in quantitative investing and data science. He is also actively involved in teaching and academic service. He currently manages the Drug Research Network at Imperial College Business School and serves as a PhD advisor for the Student Investment Fund.
 </div>
+</div>
+
+<div style="margin-left:2em;">
+  <h2><a href="https://aminizadyar.github.io/about/#" target="_blank" rel="noopener">
+     Curriculum Vitae</a></h2>
 </div>
 
 <div style="margin-left:2em;">
