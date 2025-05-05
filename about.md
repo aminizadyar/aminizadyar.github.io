@@ -13,3 +13,13 @@ nav_order: 3
     In addition to his research, Amin has practical experience in quantitative investing and data science. He is also actively involved in teaching and academic service. He currently manages the Drug Research Network at Imperial College Business School and serves as a PhD advisor for the Student Investment Fund.
 </div>
 </div>
+
+<div style="margin-left:2em;">
+  <h4>More about me!</h4>
+  <ul>
+    <li> I love watching football matches and I support Chelsea FC. My favourie books
+     </li>
+    <li> I love watching football matches and I support Chelsea FC. My favourie books
+     </li>
+  </ul>
+</div>
