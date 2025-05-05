@@ -18,9 +18,11 @@ nav_order: 3
   <h5>More about me!</h5>
   <div class="paper-abstract">
   <ul>
-    <li> I love watching football matches and I support Chelsea FC. My favourie books
+    <li> I love watching football and I’m a Chelsea FC fan.
      </li>
-    <li> I love watching football matches and I support Chelsea FC. My favourie books
+    <li> My favourie books: - Brave New World - Homo Deus: A History of Tomorrow - Fooled by Randomness  
+     </li>
+    <li> My favourie movies: - Cinema Paradiso - Fight Club - Harvey  
      </li>
   </ul>
   </div>
