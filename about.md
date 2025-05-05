@@ -15,11 +15,13 @@ nav_order: 3
 </div>
 
 <div style="margin-left:2em;">
-  <h4>More about me!</h4>
+  <h5>More about me!</h5>
+  <div class="paper-abstract">
   <ul>
     <li> I love watching football matches and I support Chelsea FC. My favourie books
      </li>
     <li> I love watching football matches and I support Chelsea FC. My favourie books
      </li>
   </ul>
+  </div>
 </div>
