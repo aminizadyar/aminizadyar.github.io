@@ -135,9 +135,10 @@
    Smaller, muted text for paper abstracts
    ------------------------------------------------------------------- */
 .paper-abstract {
-  font-size: 0.9em !important;           /* 90% of the normal text size */
+  font-size: 0.7em !important;           /* 90% of the normal text size */
   line-height: 1.4 !important;           /* a bit more breathing room */
   color: #555 !important;                /* slightly muted color */
   margin-top: 0.25em !important;         /* small gap above */
   margin-left: 1.5em !important;         /* indent under the bullet */
+  margin-right: 1.5em !important;
 }
