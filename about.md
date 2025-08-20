@@ -18,9 +18,3 @@ nav_order: 3
      Curriculum Vitae</a></h2>
 </div>
 
-<div style="margin-left:2em;">
-  <h2>Beyond the Resume</h2>
-  <div class="paper-abstract">
-  I love watching football and I’m a Chelsea FC fan. Some of my favourite books include <em>Brave New World</em>, <em>Homo Deus: A History of Tomorrow</em>, and <em>Fooled by Randomness</em>. I also enjoy classic and thought-provoking films such as <em>Cinema Paradiso</em>, <em>Fight Club</em>, and <em>Harvey</em>.
-</div>
-</div>
