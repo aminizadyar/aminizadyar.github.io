@@ -16,23 +16,10 @@ nav_order: 2
      </li>
      <br>
     <li>Robust Estimation of Factor Structure in the FX Market (work in progress)</li>
+    <li> Cross Predictability in Multi-asset Portfolios </li>
   </ul>
 </div>
 
-
-<div style="margin-left:2em;">
-  <h2>Other Projects</h2>
-  <ul>
-    <li>
-  Cross-asset Predictive Signals: Python Implementation of Principal Portfolios 
-  <a href="https://github.com/aminizadyar/Principal-Portfolios" target="_blank" rel="noopener">[GitHub]</a>
-  <div class="paper-abstract">
-    <i>Description:</i> An open-source Python package implementing the Principal Portfolios framework of Kelly, Malamud &amp; Pedersen (2023, <em>The Journal of Finance</em>). It combines own-asset and cross-asset predictive signals to build optimal trading strategies. Install with:
-    <code>pip install principal_portfolios</code>. See the <code>examples/</code> folder for a fully worked notebook that reproduces all results from Kelly et al. (2023).
-  </div>
-    </li>
-  </ul>
-</div>
 
 <div style="margin-left:2em;">
   <h2>Pre-PhD</h2>
