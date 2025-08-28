@@ -15,8 +15,8 @@ nav_order: 2
     </div>
      </li>
      <br>
-    <li>Robust Estimation of Factor Structure in the FX Market (work in progress)</li>
-    <li> Cross Predictability in Multi-asset Portfolios </li>
+    <li>Robust Estimation of Factor Structure in the FX Market</li>
+    <li> Cross Predictability in Multi-asset Portfolios</li>
   </ul>
 </div>
 
