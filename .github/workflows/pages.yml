@@ -1,42 +1,43 @@
-name: Build & deploy Jekyll site
+name: Deploy site
 
 on:
   push:
     branches:
-      - main   # or 'master'
+      - main
+  workflow_dispatch:
 
-# Grant the GITHUB_TOKEN rights to write repo contents (so it can push to gh-pages)
+# GITHUB_TOKEN needs write access to push the built site to gh-pages
 permissions:
   contents: write
-  pages: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
-        # persist-credentials is true by default, so checkout will use GITHUB_TOKEN
-        # to push back to the same repo
+        uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.1
-
-      - name: Install dependencies
+      # The site is plain HTML/CSS, so "building" is just collecting the
+      # files that should be public. Anything not copied here stays out of
+      # the deployed branch (workflows, README, scratch files).
+      - name: Assemble site
         run: |
-          gem install bundler
-          bundle install
-
-      - name: Build site with Jekyll
-        run: bundle exec jekyll build --destination _site
+          mkdir -p _site
+          cp index.html robots.txt sitemap.xml favicon.ico favicon.svg \
+             favicon-32.png favicon-192.png apple-touch-icon.png _site/
+          cp -r assets _site/
+          touch _site/.nojekyll
+          ls -R _site
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages       # deploy to gh-pages
-          folder: _site          # the folder to deploy
-          clean: true            # remove old files
+          branch: gh-pages
+          folder: _site
+          clean: true
           token: ${{ secrets.GITHUB_TOKEN }}
