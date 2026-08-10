@@ -30,7 +30,7 @@ jobs:
           mkdir -p _site
           cp index.html robots.txt sitemap.xml favicon.ico favicon.svg \
              favicon-32.png favicon-192.png apple-touch-icon.png _site/
-          cp -r assets _site/
+          cp -r assets research about _site/
           touch _site/.nojekyll
           ls -R _site
 
