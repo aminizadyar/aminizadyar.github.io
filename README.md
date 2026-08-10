@@ -17,4 +17,5 @@ which copies the site files to the `gh-pages` branch that GitHub Pages serves.
 | `assets/css/style.css` | All styling; palette and metrics live in the `:root` custom properties |
 | `assets/images/avatar.jpg` | Profile photo (512×512, also used as the Open Graph image) |
 | `favicon.svg`, `favicon*.png`, `favicon.ico`, `apple-touch-icon.png` | "AI" monogram icon set, generated to match the site palette |
+| `tools/make-favicon.ps1` | Regenerates the whole icon set from one glyph outline, so the SVG and PNGs can't drift apart. Edit `$FIELD` / `$MARK` at the top to recolour, then re-run. Not deployed. |
 | `sitemap.xml`, `robots.txt` | Search-engine metadata; bump `lastmod` when content changes meaningfully |
